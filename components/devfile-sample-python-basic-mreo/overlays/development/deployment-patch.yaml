@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-mreo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/test-rhtap-3-tenant/load-app-33bab9c5-b619-426b-9e83-a5e55a33bb5d/devfile-sample-python-basic-mreo@sha256:69250e6ca8bdba74616ea4ae005cede3aa2a7c2bd36b18b4057b6bcff61b2469
+        name: my-python
+        resources: {}
+status: {}
